@@ -1,13 +1,12 @@
 /* Universal Styles */
 
-html {
-    font-size: 16px;
-  }
-  
   body {
+    font-size: 20px;
     background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
   }
-  
+
   .image-container {
     overflow: hidden;
   }
@@ -21,6 +20,8 @@ html {
   /* Banner Section */
 
   #banner {
+    margin: 0;
+    padding: 0;
     height: 15rem;
     background-image: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     /* background: black; */
@@ -39,7 +40,9 @@ html {
     /* font-family: 'Roboto', sans-serif; */
     font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
-    font-family: "Segoe UI","微軟正黑體",sans-serif
+    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    position: absolute;
+    text-align: center;
   }
   
 
@@ -57,7 +60,7 @@ html {
   #content .section {
     width: 50%;
     margin-top: 3.8%;
-    margin-bottom: 8%;
+    margin-bottom: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +114,9 @@ html {
     letter-spacing: 1rem;
     font-size: 3px;
     color: #bebebe;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
   }
 
   /* Content Images */
@@ -137,11 +143,58 @@ html {
     max-height: 200px;
     border-radius: 100%;
   }
+
+  /* Skills Section */
+  .skill {
+    width: 100%;
+    /* background: pink; */
+  }
+
+  .progress_bar {
+    width: 100%;
+    height: 33px;
+    margin: 10px;
+    padding: 0;
+    float: right;
+    background: #ebd3e8;
+  }
+  .bar {
+    background: #dab1d5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: left;
+  }
+
+  .bar h3 {
+    margin: 0 0 0 10px;;
+  }
+
+  /* Portfolios section */
+
+  .portfolio_box {
+    text-align: left;
+  }
+
+  .portfolio_img {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+  }
+
+  .portfolio_img img {
+    width: 100%;
+    height: auto;
+  }
   
 
   /* Footer */
   
   footer {
+    margin: 0;
     padding: 4rem 0;
     border-top: 1px solid #999999;
     font-family: 'Roboto', sans-serif;
