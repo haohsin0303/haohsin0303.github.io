@@ -2,9 +2,10 @@
 
   body {
     font-size: 20px;
-    background-color: #fcfcfc;
+    /* background-color: #fcfcfc; */
     margin: 0;
     padding: 0;
+    color: #0A0A0A;
   }
 
   .image-container {
@@ -16,60 +17,71 @@
     height: 100px;
   }
   
-  
-  /* Banner Section */
-
+  /* Banner */
   #banner {
     margin: 0;
     padding: 0;
-    height: 15rem;
-    background-image: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    /* background: black; */
-    background-position: center;
+    height: 100px;
+    /* background-image: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"); */
+    background: #466B91;
+    /* background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-repeat: no-repeat; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
     width: 100%;
+    box-shadow:0px 3px 5px rgba(20%,20%,40%,0.5);
+    z-index: 1;
+    position: fixed;
   }
-  
-  #banner h1 {
-    font-size: 3.75rem;
-    /* font-family: 'Roboto', sans-serif; */
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: "Segoe UI","微軟正黑體",sans-serif;
-    position: absolute;
-    text-align: center;
-  }
-  
 
-  /* Content Section*/
-  
-  #content {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: yellow; */
+  #banner_empty {
+    height: 100px;
   }
-  
-  #content .section {
+
+  #banner h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Segoe UI","微軟正黑體",sans-serif;
+    font-weight: bold;
+    color: #C8D6E4;
+  }
+
+  /* Content */
+  #about,
+  #skills,
+  #portfolios {
+    background: white;
+    min-height: 690px;
+    height: auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+  }
+
+  #education,
+  #experiences {
+    background: #F5F5F5;
+    height: auto;
+    min-height: 690px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+  }
+
+  #content {
     width: 50%;
-    margin-top: 3.8%;
-    margin-bottom: 15%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #444444;
-    /* background: red; */
+    /* border-style: dotted; */
+    /* border-color: #D4D4D4; */
   }
 
   #content #about {
@@ -91,8 +103,12 @@
   .section .image-container {
     text-align: left;
     margin-bottom: 1rem;
-    /* background: blue; */
     width: 80%
+  }
+
+  #education p,
+  #experiences p {
+    font-size: 15px;
   }
 
   li {
@@ -120,12 +136,10 @@
   }
 
   /* Content Images */
-
   .image-container {
     display: inline-block;
     width: 100%;
     position: relative;
-    /* background: pink; */
     vertical-align: middle;
   }
 
@@ -144,20 +158,38 @@
     border-radius: 100%;
   }
 
-  /* Skills Section */
-  .skill {
-    width: 100%;
-    /* background: pink; */
+  .next_btn{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 10px 10px;
+  }
+
+  a.move {
+    position:absolute;
+    bottom:15px;
+  }
+
+  a.move img {
+    opacity: 0.5;
+  }
+
+  /* Skills */
+  #progress_bar_container {
+    width: 80%;
   }
 
   .progress_bar {
-    width: 100%;
+    width: 96.5%;
     height: 33px;
     margin: 10px;
     padding: 0;
-    float: right;
+    float: center;
+    /* left: 50%; */
     background: #ebd3e8;
+    /* position:absolute; */
+    /* left: 50%; */
   }
+
   .bar {
     background: #dab1d5;
     margin: 0;
@@ -170,7 +202,7 @@
     margin: 0 0 0 10px;;
   }
 
-  /* Portfolios section */
+  /* Portfolios */
 
   .portfolio_box {
     text-align: left;
@@ -196,10 +228,10 @@
   footer {
     margin: 0;
     padding: 4rem 0;
-    border-top: 1px solid #999999;
+    /* border-top: 1px solid #999999; */
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    color: #999999;
+    background: #466B91;
     text-align: center;
     height: 58px;
   }
