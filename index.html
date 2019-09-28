@@ -3,90 +3,82 @@
 <head>
   <title>HAO-HSIN HSU</title>
   <link href='./resources/css/index.css' type='text/css' rel='stylesheet'>
-  <script src="./resources/javascript/index.js"></script>
   <link rel="icon" href="./resources/img/icon.ico" type="image/x-icon" />
 </head>
-<body>
+<body onload="start();">
   <div id="banner">
     <h1>HAO-HSIN HSU</h1>
-    <div class="menu">
-      <h5><a href="#about">About</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#experiences">Experiences</a>
-          <a href="#portfolios">Portfolios</a>
-        </h5>
-    </div>
   </div>
-  <div id="content">
-    <div id="about" class="section">
+  <div id="banner_empty"></div>
+  <div id="about">
+    <div id="content" class="section">
       <div class="image-container">
         <img id='id_photo' src='./resources/img/id_photo.jpg'>
       </div>
       <h2>ABOUT</h2>
-      <p>I'm a fresh graduate, who is curious and loves to learn new things.
-         Currently seeking a full time position as Front End Developer.
+      <p>I'm a graduated Master student from NTU, Computer Science major.
+         Currently looking for a job as a software engineer anywhere worldwide.
       </p>
     </div>
-    <div class="separation_line">
-      <p>-------------------------------------------</p>
-    </div>
-    <div id="education" class="section">
+    <a class="move" href="#education"><img class='next_btn' src="./resources/img/icons/next_white.png" /></a>
+  </div>
+  <div id="education">
+    <div id="content" class="section">
         <div class="image-container">
           <img src="./resources/img/icons/education_c.png" />
         </div>
       <h2>EDUCATION</h2>
       <ul>
         <li>National Taiwan University (2019)</li>
+        <p>　　Major in Computer Science</p>
         <li>National Taipei University of Business (2017)</li>
+        <p>　　Major in Business Management</p>
       </ul>
     </div>
-    <div class="separation_line">
-      <p>-------------------------------------------</p>
-    </div>
-    <div id="skills" class="section">
+    <a class="move" href="#skills"><img class='next_btn' src="./resources/img/icons/next_white.png" /></a>
+  </div>
+  <div id="skills">
+    <div id="content" class="section">
         <div class="image-container">
           <img src="./resources/img/icons/skills_c.png" />
         </div>
       <h2>SKILLS</h2>
-        <div class="skill">
+        <div id="progress_bar_container">
           <div class="progress_bar">
             <div style="width: 80%" class="bar"><h3>PYTHON</h3></div>
           </div>
-        </div>
-        <div class="skill">
           <div class="progress_bar">
             <div style="width: 70%" class="bar"><h3>HTML</h3></div>
           </div>
-        </div>
-        <div class="skill">
           <div class="progress_bar">
             <div style="width: 70%" class="bar"><h3>CSS</h3></div>
           </div>
-        </div>
-        <div class="skill">
           <div class="progress_bar">
             <div style="width: 60%" class="bar"><h3>JavaScript</h3></div>
           </div>
         </div>
     </div>
-    <div class="separation_line">
-      <p>-------------------------------------------</p>
-    </div>
-    <div id="experiences" class="section">
+    <a class="move" href="#experiences"><img class='next_btn' src="./resources/img/icons/next_white.png" /></a>
+  </div>
+  <div id="experiences">
+    <div id="content" class="section">
       <div class="image-container">
           <img src="./resources/img/icons/experiences_c.png" />
       </div>
       <h2>EXPERIENCES</h2>
       <ul>
-        <li><strong>Teaching assistant</strong> in National Taiwan University</li>
-        <li>Project with ESUN bank</li>
+        <li>Teaching assistant</li>
+        <p>　　in National Taiwan University</p>
+        <p>　　course "Introduction to FinTech"</p>
+        <li>Industry-University Cooperative Research Project</li>
+        <p>　　with ESUN bank</p>
+        <p>　　recommend system using machining learning</p>
       </ul>
     </div>
-    <div class="separation_line">
-      <p>-------------------------------------------</p>
-    </div>
-    <div id="portfolios" class="section">
+    <a class="move" href="#portfolios"><img class='next_btn' src="./resources/img/icons/next_white.png" /></a>
+  </div>
+  <div id="portfolios">
+    <div id="content" class="section">
       <div class="image-container">
           <img src="./resources/img/icons/portfolios_c.png" />
       </div>
@@ -96,10 +88,10 @@
           <a href="./resources/portfolios/todolist/todolist.html" target=_blank><img src="./resources/portfolios/todolist/illustration.png" /></a>
         </div>
         <h4>TODOLIST</h4>
-        <p class="discription">add, check, delete function</p>
         <p class="discription"></p>
       </div>
     </div>
+    <a class="move" href="#about"><img class='next_btn' src="./resources/img/icons/up_white.png" /></a>
   </div>
   <footer>
     <div id='contact'>
@@ -110,6 +102,19 @@
     </div>
     <span>&copy; Design by Hao-Hsin Hsu</span>
   </footer>
+
+  <!-- javascript -->
+  <script src="./resources/js/index.js"></script>
+  <script src="./resources/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    $("a.move").on("click", function(){
+      var gethref = $(this).attr("href");
+      $("body,html").animate({
+        scrollTop: $(gethref).position().top-100
+      }, 800);
+    return false;
+    });
+  </script>
 </body>
 </html>
 
