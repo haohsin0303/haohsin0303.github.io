@@ -1,11 +1,12 @@
-/* Universal Styles */
+/* universal */
 
   body {
     font-size: 20px;
-    /* background-color: #fcfcfc; */
+    background-color: white;
     margin: 0;
     padding: 0;
-    color: #0A0A0A;
+    color: #3F3F3F;
+    font-family: 微軟正黑體;
   }
 
   .image-container {
@@ -16,228 +17,193 @@
     display: block;
     height: 100px;
   }
-  
-  /* Banner */
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    border-bottom: 2px solid rgba(255,255,255,0.3); 
+    /* 用紅色好像不錯 */
+  }
+
+
+
+/* banner */
+
   #banner {
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    /* background-image: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"); */
-    background: #466B91;
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
+    height: 60px;
+    background: rgba(255, 255, 255, 0.98);
     display:flex;
     align-items:center;
     justify-content:center;
     width: 100%;
-    box-shadow:0px 3px 5px rgba(20%,20%,40%,0.5);
+    border-bottom: 1px solid #bbbbbb;
     z-index: 1;
     position: fixed;
   }
 
-  #banner_empty {
-    height: 100px;
-  }
-
   #banner h1 {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-family: "Segoe UI","微軟正黑體",sans-serif;
     font-weight: bold;
-    color: #C8D6E4;
+    color: #466B91;
   }
 
-  /* Content */
-  #about,
-  #skills,
-  #portfolios {
-    background: white;
-    min-height: 690px;
-    height: auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: relative;
-  }
 
-  #education,
-  #experiences {
-    background: #F5F5F5;
-    height: auto;
-    min-height: 690px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: relative;
-  }
 
-  #content {
-    width: 50%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border-style: dotted; */
-    /* border-color: #D4D4D4; */
-  }
+/* front-img */
 
-  #content #about {
-    margin-top: 10%;
-  }
-
-  #content #portfolios {
-    margin-bottom: 10%;
-  }
-  
-  .section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.3rem;
-    line-height: 1;
-  }
-
-  .section p,
-  .section ul,
-  .section .image-container {
-    text-align: left;
-    margin-bottom: 1rem;
-    width: 80%
-  }
-
-  #education p,
-  #experiences p {
-    font-size: 15px;
-  }
-
-  li {
-    margin: 0;
-    padding: 0 0 0 30px;
-    list-style: none;
-    background-image: url("https://image.flaticon.com/icons/svg/248/248756.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 15px;
-  }
-
-  .section .image-container {
-    width: 100%;
-  }
-  
-  .separation_line {
-    text-align: center;
-    letter-spacing: 1rem;
-    font-size: 3px;
-    color: #bebebe;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 90%;
-  }
-
-  /* Content Images */
-  .image-container {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    vertical-align: middle;
-  }
-
-  .image-container img {
-    max-width: 160px;
-    max-height: 60px;
-    left: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #id_photo {
-    max-width: 300px;
-    max-height: 200px;
-    border-radius: 100%;
-  }
-
-  .next_btn{
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px 10px 10px;
-  }
-
-  a.move {
-    position:absolute;
-    bottom:15px;
-  }
-
-  a.move img {
-    opacity: 0.5;
-  }
-
-  /* Skills */
-  #progress_bar_container {
-    width: 80%;
-  }
-
-  .progress_bar {
-    width: 96.5%;
-    height: 33px;
-    margin: 10px;
-    padding: 0;
-    float: center;
-    /* left: 50%; */
-    background: #ebd3e8;
-    /* position:absolute; */
-    /* left: 50%; */
-  }
-
-  .bar {
-    background: #dab1d5;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    text-align: left;
-  }
-
-  .bar h3 {
-    margin: 0 0 0 10px;;
-  }
-
-  /* Portfolios */
-
-  .portfolio_box {
-    text-align: left;
-  }
-
-  .portfolio_img {
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 300px;
-    height: auto;
-  }
-
-  .portfolio_img img {
+  #front-img img {
     width: 100%;
     height: auto;
   }
-  
 
-  /* Footer */
-  
-  footer {
-    margin: 0;
-    padding: 4rem 0;
-    /* border-top: 1px solid #999999; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    background: #466B91;
-    text-align: center;
-    height: 58px;
-  }
 
-  #contact img{
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px 10px 10px;
-  }
+
+/* Content */
+#about,
+#skills,
+#portfolios {
+  background: white;
+  height: auto;
+}
+
+#education,
+#experiences {
+  background: #F5F5F5;
+  height: auto;
+  /* display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative; */
+}
+
+.content {
+  width: 100%;
+  /* height: 300px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content_section {
+  width: 70%;
+  height: 100%;
+}
+
+.content_title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  float: top;
+  top: 0;
+  font-size: 35px;
+}
+
+.content_description {
+  width: 100%;
+  /* height: 300px; */
+  /* border: 1px solid red; */
+}
+
+/* Skills */
+#progress_bar_container {
+  width: 80%;
+}
+
+.progress_bar {
+  width: 96.5%;
+  height: 33px;
+  margin: 10px;
+  padding: 0;
+  float: center;
+  /* left: 50%; */
+  background: #ebd3e8;
+  /* position:absolute; */
+  /* left: 50%; */
+}
+
+.bar {
+  background: #dab1d5;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: left;
+}
+
+.bar h3 {
+  margin: 0 0 0 10px;;
+}
+
+/* Portfolios */
+
+.portfolio_box {
+  text-align: left;
+}
+
+.portfolio_img {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+}
+
+.portfolio_img img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* goto top */
+
+#goto_top {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+}
+
+.next_btn{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 10px 10px;
+}
+
+a.move {
+  position: relative;
+
+  /* bottom: 0px; */
+  /* right: 50%; */
+}
+
+a.move img {
+  opacity: 0.3;
+}
+
+
+
+/* Footer */
+
+footer {
+  padding: 4rem 0;
+  /* border-top: 1px solid #999999; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  background: #466B91;
+  color: black;
+  text-align: center;
+  height: 58px;
+}
+
+#contact img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 10px 10px;
+}
