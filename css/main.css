@@ -1,0 +1,49 @@
+body {
+	font-family: Microsoft JhengHei;
+	background-color: #FFFFFC;
+}
+
+.content-title {
+	color: #D81E5B;
+	font-size: 50px;
+}
+
+.horizontal-center {
+	display: flex;
+	align-items: center;
+}
+
+.horizontal-center {
+	display: flex;
+	align-items: center;
+}
+
+.vertical-center {
+	justify-content: center;
+}
+
+.content-block {
+	padding: 50px;
+	margin-top: 100px;
+	margin-bottom: : 100px;
+	/*background-color: #F7F0F5;*/
+}
+
+.education-block {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.project-img {
+	opacity: 0.5;
+}
+
+.project-img:hover {
+	opacity: 1.0;
+}
+
+.contact-icon {
+	max-width: 50px;
+	max-height: 50px;
+	margin: 10px;
+}
